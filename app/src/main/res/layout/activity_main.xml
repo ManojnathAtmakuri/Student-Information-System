@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manu.finalpro.MainActivity"
+    android:outlineProvider="none"
+    android:background="#A4A37F">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/cvr" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userNameRegister"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp"
+        android:layout_alignEnd="@+id/imageView"
+        android:hint="Username"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/emailRegister"
+        android:layout_below="@+id/userNameRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/userNameRegister"
+        android:hint="Email"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mobileRegister"
+        android:layout_below="@+id/emailRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/emailRegister"
+        android:hint="Mobile"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwordRegister"
+        android:layout_below="@+id/mobileRegister"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:hint="Password"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:text="Student"
+        android:id="@+id/studentRegister"
+        android:layout_below="@+id/passwordRegister"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/passwordRegister"
+        android:checked="false"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Back to Login.."
+        android:id="@+id/toLoginRegister"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:onClick="registertologin"
+        android:textStyle="normal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/registerButton"
+        android:onClick="register"
+        android:layout_below="@+id/studentRegister"
+        android:layout_centerHorizontal="true"
+        android:background="#A4A370" />
+
+</RelativeLayout>
